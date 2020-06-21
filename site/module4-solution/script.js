@@ -1,4 +1,4 @@
-(function () {
+(function (window) {
 
 var names = ["Yaakov", "John", "Jen", "Jason", "Paul", "Frank", "Larry", "Paula", "Laura", "Jim"];
 
@@ -10,12 +10,10 @@ for (var i = 0; i < names.length; i++) {
 
   
   if (firstLetter === 'j') {
-   // byeSpeaker.speak(names[i]);
-   console.log("Good Bye " + names[i]);
+   byeSpeaker.speak(names[i]);
   } else {
-    console.log("Hello " + names[i]);
-   //helloSpeaker.speak(names[i]);
+   helloSpeaker.speak(names[i]);
   }
 }
 
-})();
+})(window);
